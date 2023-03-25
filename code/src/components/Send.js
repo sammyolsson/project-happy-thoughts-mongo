@@ -6,7 +6,7 @@ export const Send = (message) => {
       type="submit"
       className="sendButton"
       disabled={message.lenght < 5 || message.lenght > 140}>
-    🖤 Send some happy thoughts!
+    🖤 Shoot some happy thoughts!
     </button>
   )
 }

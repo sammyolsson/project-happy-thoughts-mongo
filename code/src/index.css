@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #E2E2E2;
 }
 
 code {
@@ -16,7 +17,7 @@ code {
   display: flex;
   flex-direction: column;
   max-height: fit-content;
-  width: 100vw;
+  width: 100%;
   flex-wrap: wrap;
   align-content: center;
 }
@@ -30,11 +31,12 @@ code {
   height: 18vh;
   flex-direction: column;
   padding: 10px;
-  background-color: #A6A6A6;
+  background-color: #C3C8C9;
   justify-content: space-between;
-  box-shadow: 5px 5px ;
+  box-shadow: 5px 5px #576569;
   margin: 10px 0px;
   border-style: solid;
+  border-color: #576569
 }
 
 .inputBox p {
@@ -43,7 +45,7 @@ code {
     font-weight: 900;
     margin-bottom: 5px;
     margin-top: 0px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .inputfield {
@@ -64,8 +66,74 @@ code {
 .sendButton {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-  border-style: dotted;
+  border-style: double;
+  border-color: #576569;
   height: 30px;
   width: 50%;
+  min-width: fit-content;
+  cursor: crosshair;
+  color: #576569;
+}
 
+.sendButton:hover {
+  background-color: #E2E2E2;
+}
+
+.outputBox {
+  display: flex;
+  max-width: 500px;
+  width: 85vm;
+  height: 18vh;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: space-between;
+  box-shadow: 5px 5px #576569;
+  margin: 10px 0px;
+  border-style: solid;
+  border-color: #576569;
+}
+
+.heartButton {
+  border-radius: 50px;
+  width: 45px;
+  height: 45px;
+  border-style: solid;
+  border-color: #576569;
+  margin-right: 8px;
+}
+
+.heartButton:hover {
+  border-radius: 10px;
+  cursor: pointer;
+  border-color: #8B0000;
+}
+
+.outputBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.date-display {
+  font-style: italic;
+  color: rgb(109, 107, 107);
+}
+
+.errortext {
+  color: red;
+}
+
+.validtext {
+  color: #576569;
+}
+
+.contact p {
+  text-align: center;
+  color: #576569;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #576569;
+  font-weight: 700;
 }

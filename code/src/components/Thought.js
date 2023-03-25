@@ -19,9 +19,9 @@ export const Thought = (props) => {
         <div className="inputbottom">
           <Send message={message} />
           <div className="lengthdisplay">{message.length < 5 || message.length > 140 ? (
-            <p className="redtext">{message.length}/140</p>
+            <p className="errortext">{message.length}/140</p>
           ) : (
-            <p className="normaltext">{message.length}/140</p>
+            <p className="legittext">{message.length}/140</p>
           )}
           </div>
         </div>

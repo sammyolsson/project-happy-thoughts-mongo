@@ -2,12 +2,13 @@
 import React, { useState, useEffect } from 'react';
 import { Thought } from 'components/Thought';
 import { ListThoughts } from './components/ListThoughts';
+import Footer from './components/Footer';
 
 export const App = () => {
-  const [ThoughtList, setThoughtList] = useState([])
+  const [thoughtList, setThoughtList] = useState([])
   const [loading, setLoading] = useState(false)
   const submitHandler = (message) => {
-    if (message.lenght >= 5 || message.lenght <= 140) {
+    if (message.length >= 5 || message.length <= 140) {
       fetch('https://happy-thoughts-ux7hkzgmwa-uc.a.run.app/thoughts', {
         method: 'POST',
         body: JSON.stringify({ message }),
@@ -16,7 +17,7 @@ export const App = () => {
         setThoughtList((pv) => [data, ...pv])
       })
     } else {
-      alert('your thought needs to be between 5-140 characters long')
+      alert('make sure the input is between 5-140 characters long')
     }
   }
   useEffect(() => {
@@ -30,8 +31,9 @@ export const App = () => {
   return (
     <div className="main-container">
       <Thought submitHandler={submitHandler} />
-      {!loading && ListThoughts(ThoughtList)}
+      {!loading && ListThoughts(thoughtList)}
       {loading && (<h3>LOADING THOUGHTS...</h3>)}
+      <Footer />
     </div>
   );
 }
