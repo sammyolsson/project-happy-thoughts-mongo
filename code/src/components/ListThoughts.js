@@ -1,9 +1,9 @@
 /* eslint-disable no-underscore-dangle */
 import React from 'react';
 import { formatDistance } from 'date-fns';
-import { HeartButton } from './Heart';
+import { HeartButton } from './HeartButton';
 
-export const ThoughtList = (props) => {
+export const ListThoughts = (props) => {
   return (
     props.map((thought) => {
       return (
