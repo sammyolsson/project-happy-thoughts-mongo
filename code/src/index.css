@@ -5,7 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #E2E2E2;
+  background-color: #FFD831;
+  box-sizing: border-box;
 }
 
 code {
@@ -13,13 +14,39 @@ code {
     monospace;
 }
 
-.main-container {
-  display: flex;
-  flex-direction: column;
-  max-height: fit-content;
+main {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  sans-serif;
+  min-width: 340px;
+  max-width: 500px;
+  font-size: 1rem;
+  margin: 1.5rem auto 1rem auto;
+  padding: 10px 12px 5px 10px;
+  background-color: #fbe5e5;
+
+}
+
+.logo {
   width: 100%;
-  flex-wrap: wrap;
-  align-content: center;
+  padding-top: 1.5rem;
+}
+
+.image-wrapper {
+  display: block;
+  margin: 1.5rem auto 1.5rem auto;
+  max-width: 520px;
+  min-width: 350px;
+}
+
+/* WRITE A THOUGHT WINDOW */
+.form-section {
+  border: black solid 3px;
+  border-radius: 3px;
+  background-color: white;
+  box-shadow: 0.3rem 0.3rem rgb(66, 63, 63);
+  padding: 1rem;
+  margin: 1rem;
 }
 
 .inputBox {
@@ -119,21 +146,13 @@ code {
   color: rgb(109, 107, 107);
 }
 
-.errortext {
-  color: red;
-}
-
-.validtext {
-  color: #576569;
-}
-
 .contact p {
   text-align: center;
-  color: #576569;
+  color: black;
 }
 
 .contact a {
   text-decoration: none;
-  color: #576569;
+  color: black;
   font-weight: 700;
 }
