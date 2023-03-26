@@ -15,14 +15,15 @@ code {
 }
 
 .image-wrapper {
-  display: block;
+  display: flex;
+  justify-content: center;
   margin: 1.5rem auto 1.5rem auto;
   max-width: 520px;
   min-width: 350px;
 }
 
 .logo {
-  align-items: center;
+  width: 100%;
 }
 
 main {
@@ -37,7 +38,6 @@ main {
   background-color: #FFD831;
 }
 
-/* WRITE A THOUGHT WINDOW */
 .form-section {
   border: black solid 3px;
   border-radius: 3px;
@@ -156,3 +156,10 @@ main {
   font-weight: 700;
 }
 
+@media only screen and (max-width: 767px) {
+  .logo {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+}

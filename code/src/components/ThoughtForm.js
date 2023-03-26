@@ -8,7 +8,7 @@ const ThoughtForm = ({ newThought, onNewThoughtChange, onFormSubmit }) => {
     if (newThought.length > 140) {
       return (<p className="character-warning">Your thought can only be 140 characters long</p>)
     } else {
-      return (<p className="character-count">{newThought.length} / 140</p>)
+      return (<p className="character-count">{newThought.length} / 140, need atleast 6 characters.</p>)
     }
   }
   return (
