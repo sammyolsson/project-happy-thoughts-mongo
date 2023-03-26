@@ -25,7 +25,7 @@ export const App = () => {
     fetchThoughts();
   }, [])
 
-  /* TEXT-INPUT-VALUE TO SETNEWTHOUGHT */
+  /* WRTIES NEW TEXT-INPUT-VALUE TO SETNEWTHOUGHT */
   const handleNewThoughtChange = (event) => {
     setNewThought(event.target.value)
   }
@@ -73,7 +73,6 @@ export const App = () => {
   }
   return (
     <div>
-      Find me in src/app.js!
       <Header />
       <main>
         <ThoughtForm
