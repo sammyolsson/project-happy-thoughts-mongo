@@ -1,12 +1,9 @@
 /* eslint-disable linebreak-style */
 import React from 'react';
 
-/* Component which contains the form input */
 const ThoughtForm = ({ newThought, onNewThoughtChange, onFormSubmit }) => {
-  /* Variable that stores the acceptable number of characters */
   const isSubmitButtonDisabled = newThought.length < 6 || newThought.length > 140;
-  /* a conditional function that shows either the character-count or a warning message,
-  depending on number of characters */
+  /* SHOWS CHARACTER-COUNT OR A WARNING MESSAGE DEPENDING ON NUMBER OF CHARACTERS */
   const characterWarning = () => {
     if (newThought.length > 140) {
       return (<p className="character-warning">Your thought can only be 140 characters long</p>)
@@ -22,7 +19,7 @@ const ThoughtForm = ({ newThought, onNewThoughtChange, onFormSubmit }) => {
           <textarea
             className="thought-input"
             id="thought-input"
-            placeholder="Write your happy thought here..."
+            placeholder="Enter the happy thought here..."
             value={newThought}
             onChange={onNewThoughtChange} />
         </label>
@@ -31,7 +28,7 @@ const ThoughtForm = ({ newThought, onNewThoughtChange, onFormSubmit }) => {
           className="submit-button"
           type="submit"
           disabled={isSubmitButtonDisabled}>
-          🖤 Send Happy Thought!
+          🖤 Shoot a happy thought!
         </button>
       </form>
     </section>)

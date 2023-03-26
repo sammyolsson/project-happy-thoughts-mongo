@@ -11,7 +11,7 @@ export const App = () => {
   const [loading, setLoading] = useState(false)
   const [newThought, setNewThought] = useState('')
 
-  /* Fetches the most recent happy thoughts from the API */
+  /* FETCHES MOST RECENT THOUGHTS */
   const fetchThoughts = () => {
     setLoading(true);
     fetch('https://happy-thoughts-ux7hkzgmwa-uc.a.run.app/thoughts')
@@ -25,12 +25,12 @@ export const App = () => {
     fetchThoughts();
   }, [])
 
-  /* Function that passes new text-input-value to setNewThought */
+  /* TEXT-INPUT-VALUE TO SETNEWTHOUGHT */
   const handleNewThoughtChange = (event) => {
     setNewThought(event.target.value)
   }
 
-  /* Function that posts new thought to API and updates setThoughtList state */
+  /* POSTS NEW THOUGHT AND UPDATES STATE */
   const postNewThought = () => {
     const options = {
       method: 'POST',
@@ -47,15 +47,13 @@ export const App = () => {
       });
   }
 
-  /* Function that prevents default submit behaviour, calls postNewThought function
-  and clears textarea. Activated onClick */
   const handleFormSubmit = (event) => {
     event.preventDefault();
     postNewThought();
     setNewThought('')
   };
 
-  /* Function that posts new likes to API */
+  /* POSTS NEW LIKES TO API */
   const handleLike = (_id) => {
     fetch(`https://happy-thoughts-ux7hkzgmwa-uc.a.run.app/thoughts/${_id}/like`, { method: 'POST' })
       .then((res) => {

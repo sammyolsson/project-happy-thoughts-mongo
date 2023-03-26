@@ -23,15 +23,11 @@ main {
   font-size: 1rem;
   margin: 1.5rem auto 1rem auto;
   padding: 10px 12px 5px 10px;
-  background-color: #fbe5e5;
+  background-color: #FFD831;
 
 }
 
-.logo {
-  width: 100%;
-  padding-top: 1.5rem;
-}
-
+/* HAPPY LOGO */
 .image-wrapper {
   display: block;
   margin: 1.5rem auto 1.5rem auto;
@@ -43,107 +39,107 @@ main {
 .form-section {
   border: black solid 3px;
   border-radius: 3px;
-  background-color: white;
-  box-shadow: 0.3rem 0.3rem rgb(66, 63, 63);
+  background-color: #A6A6A6;
+  box-shadow: 0.5rem 0.5rem rgb(31, 31, 31);
   padding: 1rem;
   margin: 1rem;
 }
-
-.inputBox {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.form {
   display: flex;
-  max-width: 500px;
-  width: 85vw;
-  height: 18vh;
   flex-direction: column;
-  padding: 10px;
-  background-color: #C3C8C9;
-  justify-content: space-between;
-  box-shadow: 5px 5px #576569;
-  margin: 10px 0px;
-  border-style: solid;
-  border-color: #576569
 }
 
-.inputBox p {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-    font-weight: 900;
-    margin-bottom: 5px;
-    margin-top: 0px;
-    font-size: 18px;
-}
-
-.inputfield {
-  height: 45%;
-}
-
-.inputbottom {
+.label {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  sans-serif;
   display: flex;
-  justify-content: space-around;
-}
-
-.thoughtOutputText {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-  font-weight: 900;
-}
-
-.sendButton {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-  border-style: double;
-  border-color: #576569;
-  height: 30px;
-  width: 50%;
-  min-width: fit-content;
-  cursor: crosshair;
-  color: #576569;
-}
-
-.sendButton:hover {
-  background-color: #E2E2E2;
-}
-
-.outputBox {
-  display: flex;
-  max-width: 500px;
-  width: 85vm;
-  height: 18vh;
   flex-direction: column;
-  padding: 10px;
-  justify-content: space-between;
-  box-shadow: 5px 5px #576569;
-  margin: 10px 0px;
-  border-style: solid;
-  border-color: #576569;
+  font-weight: 500;
 }
 
-.heartButton {
-  border-radius: 50px;
-  width: 45px;
-  height: 45px;
-  border-style: solid;
-  border-color: #576569;
-  margin-right: 8px;
+.thought-input {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  sans-serif;
+  margin: 1rem 0 0 0;
+  padding: 0.5rem;
+  font-size: 1rem;
 }
 
-.heartButton:hover {
-  border-radius: 10px;
-  cursor: pointer;
-  border-color: #8B0000;
-}
-
-.outputBottom {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.date-display {
+.character-count,
+.character-warning {
+  margin: 0.3rem 0 0 0;
+  text-align: center;
   font-style: italic;
-  color: rgb(109, 107, 107);
+  font-size: 1rem;
+  color:#6b6b6b;
+  margin-bottom: 1rem;
+}
+
+.submit-button {
+  background-color: #FFD831;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  sans-serif;
+  padding: 1em 1rem;
+  font-weight: 700;
+  cursor: crosshair;
+  color: black;
+  border-color: black;
+}
+
+.submit-button:hover {
+  background-color: black;
+  color: #FFD831;
+}
+
+.thought-section {
+  margin-top: 4.5rem;
+}
+
+.single-thought {
+  border: black solid 3px;
+  border-radius: 4px;
+  background-color: white;
+  margin: 1.5rem 1rem 1rem 1rem;
+  box-shadow: 0.5rem 0.5rem rgb(31, 31, 31);
+  padding: 2rem;
+}
+
+.thought-details {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.heart-button,
+.heart-button-nolikes {
+  border-color: #FFD831;
+  padding: 0.5rem;
+  border-radius: 100%;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.heart-button {
+  background-color: #FFD831;
+  border-color: black;
+  border-radius: 100%;
+}
+
+.heart-button-nolikes:hover {
+  rotate: 720deg;
+  transition: rotate 1s;
+}
+
+.time {
+  color: #A6A6A6;
 }
 
 .contact p {
