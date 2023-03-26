@@ -1,13 +1,13 @@
 # Happy Thoughts
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+Practice React state skills by fetching and posting data to an API.
+The task was to follow a design but I kinda failed on that part.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+Hard to know what to put in components, had to remove/add/rearrange my code multiple times.
+CSS, JS, React, API.
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://phenomenal-bavarois-c771f2.netlify.app/
