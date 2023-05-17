@@ -14,7 +14,7 @@ export const App = () => {
   /* FETCHES MOST RECENT THOUGHTS */
   const fetchThoughts = () => {
     setLoading(true);
-    fetch('https://happy-thoughts-ux7hkzgmwa-uc.a.run.app/thoughts')
+    fetch('https://project-happy-thoughts-api-rg22bvxr4q-lz.a.run.app/thoughts')
       .then((res) => res.json())
       .then((data) => setThoughtList(data))
       .catch((error) => console.error(error))
@@ -40,7 +40,7 @@ export const App = () => {
       body: JSON.stringify({ message: newThought })
     };
 
-    fetch('https://happy-thoughts-ux7hkzgmwa-uc.a.run.app/thoughts', options)
+    fetch('https://project-happy-thoughts-api-rg22bvxr4q-lz.a.run.app/thoughts', options)
       .then((res) => res.json())
       .then((data) => {
         setThoughtList((prevList) => [data, ...prevList]);
@@ -55,7 +55,7 @@ export const App = () => {
 
   /* POSTS NEW LIKES TO API */
   const handleLike = (_id) => {
-    fetch(`https://happy-thoughts-ux7hkzgmwa-uc.a.run.app/thoughts/${_id}/like`, { method: 'POST' })
+    fetch(`https://project-happy-thoughts-api-rg22bvxr4q-lz.a.run.app/thoughts/${_id}/like`, { method: 'POST' })
       .then((res) => {
         return res.json();
       })
