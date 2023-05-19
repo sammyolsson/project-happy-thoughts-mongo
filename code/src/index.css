@@ -1,12 +1,11 @@
 body {
   margin: 0;
+  background-color: #FFD831;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #FFD831;
-  box-sizing: border-box;
 }
 
 code {
@@ -14,149 +13,172 @@ code {
     monospace;
 }
 
+.mainContainer {
+  padding: 0 18px;
+  box-sizing: border-box;
+  width: 450px;
+  margin: 0 auto;
+}
+
 .image-wrapper {
+  padding: 0 18px;
+  box-sizing: border-box;
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-left: 5px;
+}
+
+.formCard {
   display: flex;
-  justify-content: center;
-  margin: 1.5rem auto 1.5rem auto;
-  max-width: 520px;
-  min-width: 350px;
-}
-
-.logo {
-  width: 100%;
-}
-
-main {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-  sans-serif;
-  min-width: 340px;
-  max-width: 500px;
-  font-size: 1rem;
-  margin: 1.5rem auto 1rem auto;
-  padding: 10px 12px 5px 10px;
-  background-color: #FFD831;
-}
-
-.form-section {
-  border: black solid 3px;
-  border-radius: 3px;
+  flex-direction: column;
+  box-sizing: border-box;
   background-color: #A6A6A6;
+  margin: 20px 0;
+  padding: 15px;
+  border: 1px solid #000000;
   box-shadow: 0.5rem 0.5rem rgb(31, 31, 31);
-  padding: 1rem;
-  margin: 1rem;
 }
 
-.form {
-  display: flex;
-  flex-direction: column;
+.headThought {
+  font-family: "Verdana";
+  font-weight: bold;
+  font-size: 15px;
+  color: #000000;
 }
 
-.label {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-  sans-serif;
-  display: flex;
-  flex-direction: column;
-  font-weight: 500;
+textarea {
+  border: none;
+    color: #000000;
+    padding: 8px;
+    margin: 15px 0 10px;
+    width: 100%;
+    box-sizing: border-box;
+    resize: none;
+    font-family: "Verdana";
 }
 
-.thought-input {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-  sans-serif;
-  margin: 1rem 0 0 0;
-  padding: 0.5rem;
-  font-size: 1rem;
-}
-
-.character-count,
-.character-warning {
-  margin: 0.3rem 0 0 0;
-  text-align: center;
-  font-style: italic;
-  font-size: 1rem;
-  color:#6b6b6b;
-  margin-bottom: 1rem;
-}
-
-.submit-button {
+.submitBtn {
+  font-family: "Verdana";
+  font-size: 12px;
+  font-weight: bold;
+  color: #000000;
   background-color: #FFD831;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-  sans-serif;
-  padding: 1em 1rem;
-  font-weight: 700;
-  cursor: crosshair;
-  color: black;
-  border-color: black;
-}
-
-.submit-button:hover {
-  background-color: black;
-  color: #FFD831;
-}
-
-.thought-section {
-  margin-top: 4.5rem;
-}
-
-.single-thought {
-  border: black solid 3px;
-  border-radius: 4px;
-  background-color: white;
-  margin: 1.5rem 1rem 1rem 1rem;
-  box-shadow: 0.5rem 0.5rem rgb(31, 31, 31);
-  padding: 2rem;
-}
-
-.thought-details {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-  sans-serif;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 0.9rem;
-  font-style: italic;
-}
-
-.heart-button,
-.heart-button-nolikes {
-  border-color: #FFD831;
-  padding: 0.5rem;
-  border-radius: 100%;
-  margin-right: 0.5rem;
+  padding: 8px 12px;
   cursor: pointer;
+  margin-top: 8px;
 }
 
-.heart-button {
-  background-color: #FFD831;
-  border-color: black;
+.submitBtn:hover {
+  background-color: white;
+  color: #000000;
+  border: 2px solid #000000;
+}
+
+.heart {
+  margin: 8px;
+}
+
+.card {
+  box-sizing: border-box;
+  background-color: white;
+  border: black solid 3px; 
+  margin: 18px 0;
+  padding: 10px 20px;
+  box-shadow: 0.5rem 0.5rem rgb(31, 31, 31);
+  overflow-wrap: break-word;
+}
+
+.postText {
+  font-family: "Verdana";
+  font-size: 13px;
+  color: #000000;
+  margin: 0;
+  padding: 18px 0;
+  min-height: 20px;
+}
+
+.likesBtn,
+.noLikesBtn {
+  margin-right: 8px;
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+  border-color: #FFD831;
   border-radius: 100%;
+
 }
 
-.heart-button-nolikes:hover {
+.noLikesBtn {
+  background-color: #a2a0a047;
+}
+
+.noLikesBtn:hover {
+  background-color: #a2a0a047;
   rotate: 720deg;
   transition: rotate 1s;
 }
 
-.time {
-  color: #A6A6A6;
+.sumHearts,
+.counter {
+  font-size: 10px;
+  color: #000000;
+  text-align: right;
+  margin: 0;
 }
 
-.contact {
+.sumHearts {
+  position: absolute;
+  margin-top: 10px;
+}
+
+.date {
+    float: right;
+    position: relative;
+    font-size: 10px;
+    color: #aeaeae;
+    text-align: right;
+}
+
+.loading {
+  box-sizing: border-box;
+  background-color: white;
+  border: black solid 3px; 
+  height: 100px;
+  margin: 20px 0;
+  box-shadow: 0.5rem 0.5rem rgb(31, 31, 31);
+}
+
+h2 {
+  padding: 35px;
+  font-family: "Verdana";
+  color: #000000;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.footContainer {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
 }
 
-.contact p {
-  text-align: center;
-  color: black;
-}
-
-.contact a {
+.footContainer a {
   text-decoration: none;
-  color: black;
-  font-weight: 700;
+  color: #000000;
+  font-weight: bold;
+}
+
+.footContainer a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 320px) and (max-width: 400px) {
+
+  .mainContainer {
+    width: 316px;
+    padding: 0 2px;
+  }
 }

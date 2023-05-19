@@ -2,7 +2,7 @@
 import React from 'react';
 import logo from './assets/happy-logo.png'
 
-const Header = () => {
+export const Header = () => {
   return (
     <header>
       <div className="image-wrapper">
@@ -10,5 +10,3 @@ const Header = () => {
       </div>
     </header>)
 }
-
-export default Header;
