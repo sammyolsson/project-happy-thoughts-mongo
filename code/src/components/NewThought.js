@@ -38,7 +38,7 @@ export const NewThought = () => {
             value={newThought}
             onChange={(event) => setNewThought(event.target.value)} />
         </label>
-        <p className={newThought.length > 140 ? 'counter' : 'counter'}>{newThought.length} / 140</p>
+        <p className={newThought.length > 140 ? 'counter' : 'counter'}>Number of characters: {newThought.length} / 140</p>
         <button className="submitBtn" type="submit">
           <span>
             Send a happy thought!
