@@ -16,10 +16,12 @@ export const ThoughtFeed = () => {
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
-        setThoughtsList(data)
+        setThoughtsList(data);
       })
       .catch((error) => console.log(error))
-      .finally(() => { setLoading(false) })
+      .finally(() => {
+        setLoading(false);
+      });
   }, []);
 
   const HandleLike = (_id) => {
