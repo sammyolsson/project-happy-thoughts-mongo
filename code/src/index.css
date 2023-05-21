@@ -141,15 +141,6 @@ textarea {
     text-align: right;
 }
 
-.loading {
-  box-sizing: border-box;
-  background-color: #FFFFFF;
-  border: black solid 3px; 
-  height: 100px;
-  margin: 20px 0;
-  box-shadow: 0.5rem 0.5rem rgb(31, 31, 31);
-}
-
 h2 {
   padding: 35px;
   font-family: "Verdana";
