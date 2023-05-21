@@ -31,7 +31,7 @@ export const NewThought = () => {
           <textarea
             id="newThought"
             type="text"
-            placeholder="Enter the happy thought there.."
+            placeholder="Enter the happy thought here.."
             aria-label="type-happines"
             rows="4"
             cols="40"
